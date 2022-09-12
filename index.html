@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+	<script src="programa.js"> </script>	
+	<title>Meu Dolar</title>
+	
+</head>
+	<body>
+			<div class="container">
+			<h1 class = "page-title">
+					Meu Dolar
+			</h1>
+			<p class="page-subtitle">
+			Seja Bem-vindo ao Meu dolar
+			</p>
+				
+				<div>
+				<!--Codigo do primeiro botão --> 
+					<div>
+						<br><br><br><br><br><p class="button-title1"> USD em BRL </p>
+						<label class="dolar" for "dolar"> <strong> Dólar: </strong></label>
+						<input class="dolar2" type="number" placeholder ="U$" name="dolar" id="dolar" onfocus="real.value=''">
+						<button class="button1" onclick="converteDolar(document.getElementById('dolar').value);">Converter</button>
+					</div>
+				<!--Codigo do segundo botão -->
+					<div>
+						<p class="button-title2"> BRL em USD </P>
+						<label class="real" for "real"> <strong> Real: </strong> </label>
+						<input class="real2" type="number" placeholder ="R$" name="real" id="real" onfocus="dolar.value=''">
+						<button class="button2" onclick="converteReal(document.getElementById('real').value);"> Converter </button>				
+					</div>
+					
+					<h2 id="h2"> </h2>
+					<h2 class="cot" id="cot"> </h2>
+					
+				</div>
+			
+			
+						
+			</div>
+			
+			
+	</body>
+	
+
+</html>
